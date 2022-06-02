@@ -4,6 +4,12 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from .models import Snack
 
+###########################################################################################
+# ATTENTION:
+# DATABASES should be set to use SQLite
+# Easiest way to ensure that is to comment out all the Postgres stuff in project/.env
+# That will run using defaults, which is SQLite
+###########################################################################################
 
 class SnackTests(APITestCase):
     @classmethod
